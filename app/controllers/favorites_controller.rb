@@ -21,4 +21,34 @@ class FavoritesController < ApplicationController
 
     redirect_to "/favorites/#{ f.id }"
   end
+
+  def edit
+    @favorite = Favorite.find(params['id'])
+  end
+
+  def update
+    f = Favorite.find(params["id"])
+    f.name = params["name"]
+    f.url = params["url"]
+    f.save
+
+    redirect_to "/favorites/#{f.id}"
+  end
+
+  def index
+    @favorites = Favorite.all
+  end
+
+  def destroy
+    f = Favorite.find(params["id"])
+    f.destroy
+
+    redirect_to "/favorites"
+  end
 end
+
+
+
+
+
+
