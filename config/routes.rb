@@ -1,7 +1,18 @@
 Rails.application.routes.draw do
 
   get("/", { :controller => "favorites", :action => "home"  })
+
+  # CREATE
+  get("/favorites/new", { :controller => "favorites", :action => "new"})
+  get("/create_favorite", { :controller => "favorites", :action => "create"})
+
+  # READ
   get("/favorites/:id", { :controller => "favorites", :action => "show"})
+
+  # UPDATE
+
+  # DESTROY
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
