@@ -24,11 +24,11 @@ Create a database to store your favorites. Decide what fields are important for 
 
 Add three items to your database using Rails console
 
-### Task 5 - creating items 2
+#### Task 5 - creating items 2
 
 Create a form and actions that let users add items to the database
 
-### Task 6 - updating items
+#### Task 6 - updating items
 
 Create a form and actions that let users update items in the database
 
