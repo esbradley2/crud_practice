@@ -20,13 +20,13 @@ When the user navigates to each of these pages, she should see something like "F
 
 Create a database to store your favorites. Decide what fields are important for the data you're storing. Dont forget to "rake db:migrate"!
 
-#### Task 4 - reading items
-
-Update your RCAV from task #2 so that your app takes the entered URL from the address bar, uses information from the URL to pull up a database object, then appropriately displays the database object in the view.
-
-#### Task 5 - creating items 1
+#### Task 4 - creating items 1
 
 Add three items to your database using Rails console
+
+#### Task 5 - reading items
+
+Update your RCAV from task #2 so that your app takes the entered URL from the address bar, uses information from the URL to pull up a database object, then appropriately displays the database object in the view.
 
 #### Task 6 - creating items 2
 
