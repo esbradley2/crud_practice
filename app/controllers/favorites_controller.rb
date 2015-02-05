@@ -4,6 +4,6 @@ class FavoritesController < ApplicationController
   end
 
   def show
-    @id = params['id']
+    @favorite = Favorite.find(params['id'])
   end
 end
