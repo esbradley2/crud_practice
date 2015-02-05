@@ -7,3 +7,5 @@
 <div>
   Url: <a href="<%= @favorite.url %>"><%= @favorite.url %></a>
 </div>
+
+<%= link_to "delete", "/favorites/#{@favorite.id}", :method => :delete  %>
