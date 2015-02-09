@@ -1,24 +1,4 @@
 Rails.application.routes.draw do
-  get("/", {:controller => "favorites", :action => "home"})
-
-
-  # CREATE
-  get("/favorites/new", {:controller => "favorites", :action => "new"})
-  post("/favorites", {:controller => "favorites", :action => "create"})
-
-  # READ
-  get("/favorites/:id", {:controller => "favorites", :action => "show"})
-  get("/favorites", {:controller => "favorites", :action => "index"})
-
-  # UPDATE
-  get("/favorites/:id/edit", {:controller => "favorites", :action => "edit"})
-  patch("/favorites/:id", {:controller => "favorites", :action => "update"})
-
-  # DESTROY
-  delete("/favorites/:id", {:controller => "favorites", :action => "destroy"})
-
-
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
